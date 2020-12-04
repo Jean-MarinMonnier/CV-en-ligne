@@ -3,13 +3,38 @@ body{
     background-color: lightgray;
     
 }
+.contenu{
+    width : 80%;
+    margin : auto;
+
+}
 header{
     width: 100%;
+    background-color: white;
+    box-shadow : 3
 }
 .bande_noir{
-    width: 80%;
-    background-color: gray;
+    width: 100%;
+    background-color: rgb(73, 71, 71);
+    font-size : xx-large;
+    height: 5%;
+    color : white;
     
     
+}
+
+.intro{
+    text-align: center;
+    background-color: rgb(139, 133, 133);
+    padding : 15px;
+    padding-bottom: 3%;
+    color : white;
+    font-family :  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+}
+
+.photo {
+    text-align: center;
+    border-radius: 50px;
     
 }
