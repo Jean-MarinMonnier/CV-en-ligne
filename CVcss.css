@@ -22,20 +22,33 @@ header{
     color : white;  
     padding-bottom: 1px;
 }
-
+.profile {
+    position: absolute;
+    width : 80%;
+    
+    
+}
 .intro{
+    
     text-align: center;
     background-color: rgb(139, 133, 133);
     padding : 15px;
-    padding-bottom: 3%;
+    padding-bottom: 6%;
     color : white;
     font-family :  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: large;
+    
+    
 }
-
 .photo {
+    position: relative;
+    z-index: 1;
     text-align: center;
-    border-radius: 50px;
+    
+     
+}
+.photo img{
+    border-radius: 200px;
     
 }
 
@@ -43,24 +56,33 @@ header{
     text-align: center;
     width: 80%;
     margin-left: 10%;
-    margin-top: 2%;
+    margin-top: 1%;
     padding : 1%;
     border: ridge rgb(224, 224, 224);
     box-shadow : 6px 6px 3px rgb(219, 217, 217);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: rgb(240, 240, 240);
 }
+.social_network img {
+    margin-right: 25px;
+    margin-left: 25px;
+} 
+.social_network a {
+        text-decoration: none;
+    }
+
 .button {
     
 }
 
 
 .experience {
-    margin-top: 50px;
+    position: absolute;
+    margin-top: 40%;
     width : 80%;
     height : 100%;
     text-align: left;
-    position: absolute;
+    
    
 }
     
@@ -81,50 +103,82 @@ header{
 .exp_1_content{
     padding : 20px;
     border: ridge rgb(224, 224, 224);
-    box-shadow : 6px 6px 3px white;
+    border-top-style : none ;
+    border-left: none;
+    box-shadow : 6px 6px 3px rgb(219, 217, 217);
+   
 }
-.exp_1 h3{
-    position: relative;
-    width : 100%;
+.exp_1 .bandeau_noir{
     background-color: rgb(66, 66, 66);
     color: white;
     padding : 3px;
 }
 .exp_2 {
     position: relative;
-    width :20%;
-    border: solid 1px black;
+    width :22%;
     float : right;
     margin-right: 150px;
     margin-top: 250px;
+    
+    background-color :rgb(243, 243, 243);
+    
+    }
+
+.exp_2_content{
     padding : 20px;
     border: ridge rgb(224, 224, 224);
+    border-top-style : none ;
+    border-left: none;
     box-shadow : 6px 6px 3px rgb(219, 217, 217);
     }
+
+.exp_2 .bandeau_noir_2{
+    background-color: rgb(66, 66, 66);
+    color: white;
+    padding : 3px;
+}
     
 .exp_3 {
     position: relative;
     float : none;
-    width :20%;
+    width :22%;
     margin-top: 450px;
     margin-left: 150px;
+    background-color :rgb(243, 243, 243);   
+}
+.exp_3_content{
     padding : 20px;
     border: ridge rgb(224, 224, 224);
+    border-top-style : none ;
+    border-left: none;
     box-shadow : 6px 6px 3px rgb(219, 217, 217);
-       
-    }
+}   
+.exp_3 .bandeau_noir_3{
+    background-color: rgb(66, 66, 66);
+    color: white;
+    padding : 3px;
+}
     
 .exp_4 {
     position: relative;
     width :20%;
     float: none;
-    padding : 20px;
     margin-left: auto;
     margin-right: 150px;
-    border: ridge rgb(224, 224, 224);
-    box-shadow : 6px 6px 3px rgb(219, 217, 217);
+    background-color :rgb(243, 243, 243);
     } 
-
+.exp_4_content{
+    padding : 20px;
+    border: ridge rgb(224, 224, 224);
+    border-top-style : none ;
+    border-left: none;
+    box-shadow : 6px 6px 3px rgb(219, 217, 217);
+}   
+.exp_4 .bandeau_noir_4{
+    background-color: rgb(66, 66, 66);
+    color: white;
+    padding : 3px;
+}
 
 .skills {
     
@@ -132,18 +186,19 @@ header{
     flex-direction: row;
     justify-content: space-evenly;
     padding : 20px;
-    margin-top : 1000px;
+    margin-top : 1750px;
     font-size: 20px;
     
   
 }
 
-.skill_1 {
+.skill_1  { 
     background-color:rgb(66, 66, 66);
     color: white;
-    width : 10%;
-    padding : 20px;
+    width : 20%;
+    padding : 20px;  
 }
+
 
 .skill_progress{
     background-color: rgb(192, 192, 192); 
@@ -179,15 +234,15 @@ header{
 .skill_2 {
     color: white;
     background-color: rgb(66, 66, 66);
-    width : 10%;
+    width : 20%;
     padding : 20px;
-}
+} 
 
 .skill_3 {
 
    background-color: rgb(66, 66, 66);
     color: white;
-    width : 10%;
+    width : 20%;
     padding : 20px;
 }
 
@@ -207,5 +262,5 @@ header{
     width : 80%;
 }
 .esp{
-    width: 60%;
+    width: 50%;
 }
