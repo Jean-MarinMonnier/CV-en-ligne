@@ -2,6 +2,7 @@ body{
     width: 100%;
     background-color: lightgray;
     
+    
 }
 .contenu{
     width : 80%;
@@ -22,8 +23,12 @@ header{
     color : white;  
     padding-bottom: 1px;
 }
+.burger_menu:hover
+
+
+
 .profile {
-    position: absolute;
+    position: relative;
     width : 80%;
     
     
@@ -31,7 +36,7 @@ header{
 .intro{
     
     text-align: center;
-    background-color: rgb(139, 133, 133);
+    background-color: rgb(85, 85, 85);
     padding : 15px;
     padding-bottom: 6%;
     color : white;
@@ -41,9 +46,12 @@ header{
     
 }
 .photo {
-    position: relative;
+    position: absolute;
     z-index: 1;
     text-align: center;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    
     
      
 }
@@ -53,10 +61,11 @@ header{
 }
 
 .presentation {
-    text-align: center;
-    width: 80%;
+    position: relative;
+    text-align: center;;
     margin-left: 10%;
-    margin-top: 1%;
+    margin-right: 10%;
+    margin-top: 2%;
     padding : 1%;
     border: ridge rgb(224, 224, 224);
     box-shadow : 6px 6px 3px rgb(219, 217, 217);
@@ -64,6 +73,7 @@ header{
     background-color: rgb(240, 240, 240);
 }
 .social_network img {
+    margin-top : 50px;
     margin-right: 25px;
     margin-left: 25px;
 } 
@@ -77,26 +87,31 @@ header{
 
 
 .experience {
-    position: absolute;
-    margin-top: 40%;
+    position: relative;
+    margin-top: 6%;
+    left: 10%;
     width : 80%;
-    height : 100%;
+    margin-bottom: 20%;
     text-align: left;
+    font-family: 'Comic Sans MS', cursive;
+   
     
    
 }
     
 .experience h2 {
     text-align: center;
+    color :rgb(66, 66, 66);
+    letter-spacing: 2.5px;
 }
 
 
+
 .exp_1{
-    position: relative;
-    float : left;
-    width :22%;
-    margin-left: 150px;
-    margin-top: 110px;
+    position: absolute;
+    width :35%;
+    left : 5%;
+    margin-top : 5%;
     background-color :rgb(243, 243, 243);
        
 }
@@ -112,14 +127,14 @@ header{
     background-color: rgb(66, 66, 66);
     color: white;
     padding : 3px;
+   
+    
 }
 .exp_2 {
-    position: relative;
-    width :22%;
-    float : right;
-    margin-right: 150px;
-    margin-top: 250px;
-    
+    position: absolute;
+    width :35%;
+    right : 5%;
+    margin-top : 12%;
     background-color :rgb(243, 243, 243);
     
     }
@@ -130,6 +145,7 @@ header{
     border-top-style : none ;
     border-left: none;
     box-shadow : 6px 6px 3px rgb(219, 217, 217);
+    font-family: 'Comic Sans MS', cursive;
     }
 
 .exp_2 .bandeau_noir_2{
@@ -137,13 +153,66 @@ header{
     color: white;
     padding : 3px;
 }
-    
+.triangle-right::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 0;
+      height: 0;
+      border-top: 50px solid rgb(66, 66, 66);
+      border-right: 50px solid transparent;
+  } 
+
+  .triangle-left::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right : 100%;
+      width: 0;
+      height: 0;
+      border-top: 50px solid rgb(66, 66, 66);
+      border-left: 50px solid transparent;
+
+}
+.line{
+    position: absolute;
+    width : 0.2%;
+    height : 2000%;
+    left : 50%;
+    background-color:rgb(61, 172, 192);
+    margin-top: 6%;
+
+}
+
+.bowl {
+    position : absolute;
+    border-radius: 50%;
+    width: 0%;
+    height: 0;
+    border: 15px solid rgb(61, 172, 192);
+    left:49%;
+
+}
+.bowl1{
+    margin-top: 4.5%;
+}
+.bowl2 {
+    margin-top: 11.5%;
+}
+.bowl3{
+    margin-top: 34.5%;
+}
+.bowl4{
+    margin-top: 41.5%;
+}
+
+
 .exp_3 {
-    position: relative;
-    float : none;
-    width :22%;
-    margin-top: 450px;
-    margin-left: 150px;
+    position: absolute;
+    width :35%;
+    left :5%;
+    margin-top : 35%;
     background-color :rgb(243, 243, 243);   
 }
 .exp_3_content{
@@ -160,11 +229,10 @@ header{
 }
     
 .exp_4 {
-    position: relative;
-    width :20%;
-    float: none;
-    margin-left: auto;
-    margin-right: 150px;
+    position: absolute;
+    width :35%;
+    margin-top : 42%;
+    right : 5%;
     background-color :rgb(243, 243, 243);
     } 
 .exp_4_content{
@@ -179,17 +247,25 @@ header{
     color: white;
     padding : 3px;
 }
-
+.box {
+    height : 150px;
+}
 .skills {
     
     display : flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding : 20px;
-    margin-top : 1750px;
+    margin-top : 4%;
     font-size: 20px;
-    
-  
+    height: 50%;
+}
+.title_skills{
+    text-align: center;
+    color :rgb(66, 66, 66);
+    letter-spacing: 2.5px;
+    margin-top: 57.5%;
+    font-family: 'Comic Sans MS', cursive;
 }
 
 .skill_1  { 
@@ -197,6 +273,7 @@ header{
     color: white;
     width : 20%;
     padding : 20px;  
+    
 }
 
 
@@ -227,6 +304,9 @@ header{
 
 .git {
     width : 80%;
+}
+.SQL {
+    width : 50%;
 }
 
 
