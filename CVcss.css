@@ -57,7 +57,8 @@ header{
 }
 .photo img{
     border-radius: 200px;
-    
+    height :175px; 
+    width: 175px;   
 }
 
 .presentation {
@@ -81,10 +82,23 @@ header{
         text-decoration: none;
     }
 
-.button {
-    
+input {
+    width : 12.5%;
+    line-height: 2.5;
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(61, 172, 192);
+    cursor: pointer;
+    margin-right: 25px;
+    margin-left: 25px;  
 }
 
+.button_contact:hover {
+    content: " Téléphone : 07 82 02 75 49";
+}
 
 .experience {
     position: relative;
@@ -113,6 +127,7 @@ header{
     left : 5%;
     margin-top : 5%;
     background-color :rgb(243, 243, 243);
+    
        
 }
 .exp_1_content{
@@ -123,7 +138,7 @@ header{
     box-shadow : 6px 6px 3px rgb(219, 217, 217);
    
 }
-.exp_1 .bandeau_noir{
+.bandeau_noir{
     background-color: rgb(66, 66, 66);
     color: white;
     padding : 3px;
@@ -148,11 +163,8 @@ header{
     font-family: 'Comic Sans MS', cursive;
     }
 
-.exp_2 .bandeau_noir_2{
-    background-color: rgb(66, 66, 66);
-    color: white;
-    padding : 3px;
-}
+
+
 .triangle-right::before {
       content: "";
       position: absolute;
@@ -177,12 +189,12 @@ header{
 }
 .line{
     position: absolute;
-    width : 0.2%;
+    width : 0.2rem;
     height : 2000%;
     left : 50%;
     background-color:rgb(61, 172, 192);
-    margin-top: 6%;
-
+    top: 1300%;
+    transform: translate(-50%,-50%);
 }
 
 .bowl {
@@ -191,11 +203,13 @@ header{
     width: 0%;
     height: 0;
     border: 15px solid rgb(61, 172, 192);
-    left:49%;
+    left : 50%;
+    transform: translate(-50%,-50%);
 
 }
 .bowl1{
     margin-top: 4.5%;
+    
 }
 .bowl2 {
     margin-top: 11.5%;
@@ -222,11 +236,7 @@ header{
     border-left: none;
     box-shadow : 6px 6px 3px rgb(219, 217, 217);
 }   
-.exp_3 .bandeau_noir_3{
-    background-color: rgb(66, 66, 66);
-    color: white;
-    padding : 3px;
-}
+
     
 .exp_4 {
     position: absolute;
@@ -242,14 +252,10 @@ header{
     border-left: none;
     box-shadow : 6px 6px 3px rgb(219, 217, 217);
 }   
-.exp_4 .bandeau_noir_4{
-    background-color: rgb(66, 66, 66);
-    color: white;
-    padding : 3px;
-}
-.box {
+
+/* .box {
     height : 150px;
-}
+} */
 .skills {
     
     display : flex;
@@ -344,3 +350,120 @@ header{
 .esp{
     width: 50%;
 }
+
+@media (max-width : 1830px) {
+    .line{
+        height: 1650%;
+    }
+}
+@media (max-width : 1580px) {
+    .photo img{
+        width : 150px;
+        height: 150px;
+    }
+
+    .line{
+        top : 1100%;
+        
+        
+    }
+    .experience{
+        font-size: 0.9em;
+    }
+    .experience h2{
+        font-size: 1.5em;
+    }
+  
+}
+
+@media (max-width : 1406px) {
+    .photo img{
+        width: 140px;
+        height : 140px;
+    }
+
+    .exp_3 {
+        margin-top: 42%;
+    }
+    .exp_4 {
+        margin-top: 49%;
+    }
+
+    .title_skills {
+        margin-top : 70%;
+    }
+    .bowl3 {
+        margin-top: 41%;
+    }
+    .bowl4 {
+        margin-top: 48%;
+    }
+}
+
+@media (max-width : 1280px) {
+    .photo img{
+        width: 130px;
+        height : 130px;
+    }
+
+    .exp_1 {
+      
+    }
+    .bandeau_noir {
+        
+    }
+    .exp_2 {
+      
+    }
+    .exp_3 {
+        margin-top: 48%;
+        
+    }
+    .exp_4 {
+        margin-top: 55%;
+        
+    }
+
+    .title_skills {
+        margin-top : 75%;
+    }
+    .bowl3 {
+        margin-top: 48%;
+    }
+    .bowl4 {
+        margin-top: 55%;
+    }
+    /* .box {
+        height :175px;
+    } */
+}
+
+@media (max-width : 1176px) {
+
+    .title_skills {
+        margin-top: 82%;
+    }
+
+    .exp_1 {
+        left : 3%;
+    }
+    .exp_3 {
+        left: 3%;
+        margin-top: 50%;
+    }
+    .exp_2 {
+        right : 3%;
+    }
+    .exp_4{
+        right:3%;
+        margin-top: 57%;
+    }
+    .bowl3{
+        margin-top: 50%;
+    }
+    .bowl4 {
+        margin-top: 57%;
+    }
+}
+
+
