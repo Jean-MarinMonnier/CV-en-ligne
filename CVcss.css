@@ -16,8 +16,9 @@ body{
 header{
     width: 100%;
     background-color:rgb(230, 230, 230);
-    box-shadow : 3;
+    
 }
+/* Définition d'attribut : couleur, taille de police, taille du container*/
 .bande_noir{
     width: 100%;
     background-color: rgb(66, 66, 66);
@@ -178,7 +179,7 @@ input {
       content: "";
       position: absolute;
       top: 0;
-      right : 100%;
+      right : 99.9%;
       width: 0;
       height: 0;
       border-top: 50px solid rgb(66, 66, 66);
@@ -679,9 +680,7 @@ input {
 }
 
 @media (max-width : 544px) {
-    .experience {
-        font-size: 0,4em;
-    }
+
     .exp_2 {
         margin-top : 85%;
     }
