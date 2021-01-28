@@ -13,3 +13,5 @@
 ## Bilan
   Le code à quelques soucis d'optimisation avec des div qui auraient pu être évitées.
   La page s'adapte bien à de nombreux format mais sur téléhphone la police de la présentation est trop grosse et celle d'expérience n'a pas la bonne forme.
+  
+  Lien pour voir le résultat : https://jean-marinmonnier.github.io/CV-en-ligne/
