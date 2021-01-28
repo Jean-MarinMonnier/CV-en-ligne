@@ -34,6 +34,7 @@ header{
     
     
 }
+/* Bloc avec nom prénom, profession */
 .intro{
     
     text-align: center;
@@ -46,6 +47,7 @@ header{
     
     
 }
+/* positionnement de la photo entre les 2 blocs et centré */
 .photo {
     position: absolute;
     z-index: 1;
@@ -56,12 +58,14 @@ header{
     
      
 }
+/* Rendre l'image ronde et definition de sa résolution */
 .photo img{
     border-radius: 200px;
     height :175px; 
     width: 175px;   
 }
 
+/* Box contenant la description et les réseaux */
 .presentation {
     position: relative;
     text-align: center;;
@@ -74,15 +78,18 @@ header{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: rgb(240, 240, 240);
 }
+/* placement des icones des réseaux */
 .social_network img {
     margin-top : 50px;
     margin-right: 25px;
     margin-left: 25px;
 } 
+/* supression du "_" entre les icones */
 .social_network a {
         text-decoration: none;
     }
 
+/* structures des 2 boutons */
 input {
     width : 12.5%;
     line-height: 2.5;
@@ -98,7 +105,7 @@ input {
 }
 
 
-
+/* Bloc contenant toutes les expériences, placement de celui-ci */
 .experience {
     position: relative;
     margin-top: 6%;
@@ -111,7 +118,7 @@ input {
     
    
 }
-    
+/* Structure du titre "EXPERIENCE"*/
 .experience h2 {
     text-align: center;
     color :rgb(66, 66, 66);
@@ -119,7 +126,7 @@ input {
 }
 
 
-
+/* placement et défnition de l'exp1 */
 .exp_1{
     position: absolute;
     width :35%;
@@ -129,6 +136,7 @@ input {
     
        
 }
+/* bloc contenant la description de l'expérience 1 */
 .exp_1_content{
     padding : 20px;
     border: ridge rgb(224, 224, 224);
@@ -137,6 +145,7 @@ input {
     box-shadow : 6px 6px 3px rgb(219, 217, 217);
    
 }
+/* attributs donnés à tous les titres des expériences */
 .bandeau_noir{
     background-color: rgb(66, 66, 66);
     color: white;
@@ -144,6 +153,7 @@ input {
    
     
 }
+/* placement et défnition de l'exp2 */
 .exp_2 {
     position: absolute;
     width :35%;
@@ -152,7 +162,7 @@ input {
     background-color :rgb(243, 243, 243);
     
     }
-
+/* bloc contenant la description de l'expérience 2 */
 .exp_2_content{
     padding : 20px;
     border: ridge rgb(224, 224, 224);
@@ -162,8 +172,7 @@ input {
     font-family: 'Comic Sans MS', cursive;
     }
 
-
-
+/* Structure des triangles qui pointent vers la droite  */
 .triangle-right::before {
       content: "";
       position: absolute;
@@ -174,7 +183,7 @@ input {
       border-top: 50px solid rgb(66, 66, 66);
       border-right: 50px solid transparent;
   } 
-
+/* Structure des triangles qui pointent vers la gauche  */
   .triangle-left::before {
       content: "";
       position: absolute;
@@ -186,6 +195,7 @@ input {
       border-left: 50px solid transparent;
 
 }
+/* Structure du trait central bleu */
 .line{
     position: absolute;
     width : 0.2rem;
@@ -196,6 +206,7 @@ input {
     transform: translate(-50%,-50%);
 }
 
+/* Structure des 4 boules bleu */
 .bowl {
     position : absolute;
     border-radius: 50%;
@@ -206,21 +217,24 @@ input {
     transform: translate(-50%,-50%);
 
 }
+/* Positionnement de la boule 1 face à l'exp1 */
 .bowl1{
-    margin-top: 4.5%;
-    
+    margin-top: 4.5%;   
 }
+/* Positionnement de la boule 2 face à l'exp2 */
 .bowl2 {
     margin-top: 11.5%;
 }
+/* Positionnement de la boule 3 face à l'exp3 */
 .bowl3{
     margin-top: 34.5%;
 }
+/* Positionnement de la boule 4 face à l'exp4 */
 .bowl4{
     margin-top: 41.5%;
 }
 
-
+/* placement et défnition de l'exp3 */
 .exp_3 {
     position: absolute;
     width :35%;
@@ -228,6 +242,7 @@ input {
     margin-top : 35%;
     background-color :rgb(243, 243, 243);   
 }
+/* bloc contenant la description de l'expérience 3 */
 .exp_3_content{
     padding : 20px;
     border: ridge rgb(224, 224, 224);
@@ -236,7 +251,7 @@ input {
     box-shadow : 6px 6px 3px rgb(219, 217, 217);
 }   
 
-    
+/* placement et défnition de l'exp4 */    
 .exp_4 {
     position: absolute;
     width :35%;
@@ -244,6 +259,7 @@ input {
     right : 5%;
     background-color :rgb(243, 243, 243);
     } 
+/* bloc contenant la description de l'expérience 4 */
 .exp_4_content{
     padding : 20px;
     border: ridge rgb(224, 224, 224);
@@ -251,7 +267,7 @@ input {
     border-left: none;
     box-shadow : 6px 6px 3px rgb(219, 217, 217);
 }   
-
+/* Bloc en flexbox qui contient les 3 sous blocs définition de ceux-ci */
 .skills {
     
     display : flex;
@@ -262,6 +278,7 @@ input {
     font-size: 20px;
     height: 50%;
 }
+/* Structure et placement du tire SKILLS */
 .title_skills{
     text-align: center;
     color :rgb(66, 66, 66);
@@ -270,6 +287,7 @@ input {
     font-family: 'Comic Sans MS', cursive;
 }
 
+/* Structure de la box skill1 */
 .skill_1  { 
     background-color:rgb(66, 66, 66);
     color: white;
@@ -278,12 +296,14 @@ input {
     
 }
 
-
+/* Structure des barres de progression */
 .skill_progress{
     background-color: rgb(192, 192, 192); 
         width: 80%; 
         border-radius: 15px; 
 }
+
+/* Structure des barres de progression acquise */
 .skill {
     background-color: rgb(116, 194, 92); 
     color: white; 
@@ -292,14 +312,15 @@ input {
     font-size: 20px; 
      border-radius: 15px; 
 }
+/* Définition de la taille de la progression acquise pour cet item */
 .python {
     width : 70%;
 }
-
+/* Définition de la taille de la progression acquise pour cet item */
 .html {
     width : 70%;
 }
- 
+/* ..... */
 .java {
     width : 30%;
 }
@@ -312,14 +333,14 @@ input {
 }
 
 
-
+/* Structure de la box skill2 */
 .skill_2 {
     color: white;
     background-color: rgb(66, 66, 66);
     width : 20%;
     padding : 20px;
 } 
-
+/* Structure des barres de progression acquise */
 .pers {
     background-color: rgb(116, 194, 92); 
     color: white; 
@@ -328,7 +349,7 @@ input {
     font-size: 20px; 
      border-radius: 15px; 
 }
-
+/* Définition de la taille de la progression acquise pour ces items */
 .engage {
     width: 100%;
 }
@@ -341,6 +362,7 @@ input {
 .conv {
     width : 90%;
 }
+/* Structure de la box skill1 */
 .skill_3 {
 
    background-color: rgb(66, 66, 66);
@@ -348,7 +370,7 @@ input {
     width : 20%;
     padding : 20px;
 }
-
+/* Structure des barres de progression acquise */
 .lang {
     background-color: rgb(116, 194, 92); 
     color: white; 
@@ -357,7 +379,7 @@ input {
     font-size: 20px; 
      border-radius: 15px; 
 }
-
+/* Définition de la taille de la progression acquise pour ces items */
 .fr {
     width : 100%
 }
@@ -493,6 +515,7 @@ input {
 
 @media (max-width : 1048px) {
 
+    
     .photo img {
         width: 125px;
         height: 125px;
@@ -650,6 +673,9 @@ input {
 }
 
 @media (max-width : 600px) {
+    .presentation {
+        font-size: small;
+    } 
     .skills {
         font-size : small;
         }
