@@ -1,15 +1,18 @@
+/* changement de la couleur de l'arrière plan */
 body{
     width: 100%;
     background-color: lightgray;
     
     
 }
+/* changement de la couleur du fond du contenu qui fera 80% de la page totale et sera centré*/
 .contenu{
     width : 80%;
     margin : auto;
     background-color: rgb(230, 230, 230);
 
 }
+
 header{
     width: 100%;
     background-color:rgb(230, 230, 230);
@@ -23,13 +26,10 @@ header{
     color : white;  
     padding-bottom: 1px;
 }
-.burger_menu:hover
-
-
 
 .profile {
     position: relative;
-    width : 80%;
+    width : 100%;
     
     
 }
@@ -96,9 +96,7 @@ input {
     margin-left: 25px;  
 }
 
-.button_contact:hover {
-    content: " Téléphone : 07 82 02 75 49";
-}
+
 
 .experience {
     position: relative;
@@ -169,7 +167,7 @@ input {
       content: "";
       position: absolute;
       top: 0;
-      left: 100%;
+      left: 99%;
       width: 0;
       height: 0;
       border-top: 50px solid rgb(66, 66, 66);
@@ -253,9 +251,6 @@ input {
     box-shadow : 6px 6px 3px rgb(219, 217, 217);
 }   
 
-/* .box {
-    height : 150px;
-} */
 .skills {
     
     display : flex;
@@ -324,6 +319,27 @@ input {
     padding : 20px;
 } 
 
+.pers {
+    background-color: rgb(116, 194, 92); 
+    color: white; 
+    padding: 1%; 
+    text-align: right; 
+    font-size: 20px; 
+     border-radius: 15px; 
+}
+
+.engage {
+    width: 100%;
+}
+.curieux {
+    width : 100%;
+}
+.enth {
+    width : 90%;
+}
+.conv {
+    width : 90%;
+}
 .skill_3 {
 
    background-color: rgb(66, 66, 66);
@@ -351,9 +367,25 @@ input {
     width: 50%;
 }
 
+
+
+/* MEDIA QUERY   */
+
+
 @media (max-width : 1830px) {
     .line{
-        height: 1650%;
+        height: 1900%;
+    }
+    input {
+        width : 20%;
+    }
+}
+
+@media (max-width : 1654px) {
+    .line {
+        top : 1190%;
+        height : 1700%;
+        
     }
 }
 @media (max-width : 1580px) {
@@ -363,9 +395,7 @@ input {
     }
 
     .line{
-        top : 1100%;
-        
-        
+        top : 1125%;  
     }
     .experience{
         font-size: 0.9em;
@@ -406,15 +436,6 @@ input {
         height : 130px;
     }
 
-    .exp_1 {
-      
-    }
-    .bandeau_noir {
-        
-    }
-    .exp_2 {
-      
-    }
     .exp_3 {
         margin-top: 48%;
         
@@ -444,6 +465,9 @@ input {
         margin-top: 82%;
     }
 
+    input {
+        width : 25%;
+    }
     .exp_1 {
         left : 3%;
     }
@@ -466,4 +490,281 @@ input {
     }
 }
 
+@media (max-width : 1048px) {
+
+    .photo img {
+        width: 125px;
+        height: 125px;
+        left: 50%;
+        
+    }
+    .social_network img {
+        width : 50px;
+        height: 50px;
+    }
+
+    .experience{
+        font-size: large;
+    }
+
+    .box { 
+        height : 140px;
+    }
+    .exp_1{
+        width : 75%;
+    } 
+    .exp_2 {
+           width : 75%;
+           margin-top : 55%;
+       }
+    .exp_3 {
+        width : 75%;
+        margin-top: 106%;
+       }
+    .exp_4 {
+        width : 75%;
+        margin-top: 156%;
+    
+    }
+    
+    .bowl {
+        display: none;
+       }
+    .line {
+        display: none;
+    }
+
+    .title_skills {
+        margin-top : 165%;
+        font-size: large;
+    }
+
+
+}
+
+@media (max-width : 960px){
+
+    .bande_noir {
+        font-size: x-large;
+    }
+    .photo img {
+        width : 110px;
+        height : 110px;
+    }
+
+    .title_skills {
+        margin-top: 170%;
+    }
+}
+
+@media (max-width : 880px){
+    input {
+        width : 30%;
+    }
+
+    .experience {
+        font-size: medium;
+    }
+    .exp_2 {
+        margin-top: 65%;
+    }
+
+    .exp_3 {
+        margin-top: 125%;
+    }
+
+    .exp_4 {
+        margin-top: 185%;
+    }
+
+    .title_skills {
+        margin-top: 198%;
+        font-size: medium;
+    }
+}
+
+@media (max-width : 727px) {
+    .photo img {
+        width: 90px;
+        height: 90px;
+    }
+    .presentation {
+        font-size: medium;
+    }
+    input {
+        font-size: 0.9em;
+    }
+    .exp_2 {
+        margin-top: 80%;
+    }
+    
+    .exp_3 {
+        margin-top: 150%;
+    }
+    .exp_4 {
+        margin-top: 220%;
+    }
+
+    .title_skills {
+        margin-top: 230%;
+        font-size: 0.9em;
+    }
+    .skills {
+        font-size: medium;
+    }
+}
+
+@media (max-width : 625px) {
+    .intro {
+        font-size: medium;
+    }
+    .photo img {
+        width : 75px;
+        height: 75px;
+    }
+    .presentation {
+        font-size: 0.8em;
+    }
+    .social_network img {
+        width: 35px;
+        height : 35px;
+        margin-top: 20px;
+    }
+
+    .experience {
+        font-size: small;
+    }
+    .box {
+        height : 100px;
+    }
+    .exp_2 {
+        margin-top: 75%;
+    }
+    .exp_3 {
+        margin-top : 145%;
+    }
+    .exp_4 {
+        margin-top: 215%;
+    }
+}
+
+@media (max-width : 600px) {
+    .skills {
+        font-size : small;
+        }
+    .skill {
+        font-size : small;
+        }
+    .lang {
+        font-size: small;
+    }
+    .pers {
+        font-size: small;
+    }
+    .exp_3_content {
+        height: auto;
+    }
+    .photo {
+        left : 50.5%;
+    }
+}
+
+@media (max-width : 593px) {
+    .exp_3 {
+        margin-top : 140%;
+    }
+    .exp_4 {
+        margin-top: 210%;
+    }
+}
+
+@media (max-width : 544px) {
+    .experience {
+        font-size: 0,4em;
+    }
+    .exp_2 {
+        margin-top : 85%;
+    }
+    .exp_3 {
+        margin-top : 160%;
+    }
+    .exp_4 {
+        margin-top: 245%;
+    }
+    .title_skills{
+        margin-top: 255%;
+    }
+}
+@media (max-width : 520px ) {
+    .contenu {
+        font-size: smaller;
+    }
+    .bande_noir {
+        font-size: small;
+    }
+    .intro {
+        font-size: small;
+    }
+    .photo img {
+        width : 65px;
+        height: 65px;
+    }
+    .presentation {
+        font-size: 0.7em;
+    }
+    .social_network img {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .experience {
+        font-size: smaller;
+    }
+    .box {
+        height : 100px;
+    }
+    .exp_2 {
+        margin-top: 75%;
+    }
+    .exp_3 {
+        margin-top : 145%;
+    }
+    .exp_4 {
+        margin-top: 215%;
+    }
+    .title_skills {
+        margin-top: 230%;
+
+    }
+}
+
+@media (max-width : 510px) {
+    .exp_2 {
+        margin-top : 85%;
+    }
+    .exp_3 {
+        margin-top : 160%;
+    }
+    .exp_4 {
+        margin-top: 235%;
+    }
+    .title_skills{
+        margin-top: 250%;
+    }
+}
+
+@media (max-width : 470px) {
+    .skills {
+        font-size : smaller;
+        }
+    .skill {
+        font-size : smaller;
+        }
+    .lang {
+        font-size: smaller;
+    }
+    .pers {
+        font-size: smaller;
+}
+}
 
